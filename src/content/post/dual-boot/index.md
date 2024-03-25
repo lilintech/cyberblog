@@ -2,7 +2,7 @@
 title: "Dual Booting My Old Windows Machine"
 description: "A journey of my first experience with dual booting my Windows PC with BlackArch and how I fixed my storage issues during partitioning"
 publishDate: "20 Feb 2024"
-tags: ["test", "toc"]
+tags: ["operating systems", "windows", "storage"]
 ---
 ## The Process
 I have always wanted to use a Linux Operating System by itself rather than just using a Virtual machine hesitated since my PC was slow and I could only upgrade it to 6GB RAM at the time. Pushing away all the discouraging factors, I decided to dual boot my PC anyway but with BlackArch which is an Arch-based distro which was a brave move considering I had never interacted with it before and you have to manually setup everything. I just wanted a brief moment of being able to say “I use Arch btw”.
@@ -24,7 +24,7 @@ vssadmin delete shadows /for=c: /all
 More commands on deleting shadow files on Windows are [here](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/vssadmin-delete-shadows).
 
 ## Take-Away
-My grandpa of a Windows machine
+![My old Windows Machine dual booted with BlackArch](./oldpc.jpeg)
 
 I really enjoyed the learning process through the issues I faced with my storage. The learning process does not end there as through installing BlackArch Linux, I embarked on a great learning journey, I've encountered a lot of errors during configuration especially with updating packages using pacman but through them I got to appreciate the impact of open source communities that have great material and their openness to share errors they've once encountered and how they solved them.
 

@@ -8,46 +8,26 @@ const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
-const cactusTech: { desc: string; href: string; title: string }[] = [
+const youtubePosts: { desc: string; href: string; title: string }[] = [
 	{
-		desc: "Build fast websites, faster.",
-		href: "https://astro.build",
-		title: "Astro",
+		desc: "A recorded session with Cloud Experts taking up different roles in the stack in an engaging Q&A session and discussion on what the Cloud as an infrastructure is all about.",
+		href: "https://youtu.be/SxPCqeSdTgI?si=e4EBdQsUOgEBpjW0",
+		title: "Beyond the Cloud: Intro to the Cloud and Career Navigation Session",
 	},
 	{
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
-		title: "Tailwind CSS",
+		desc: "A playlist of all the online study group sessions I've hosted from setting up an Azure Student account to knowing the fundamentals of Azure in preparation for the AZ-900 exams.",
+		href: "https://www.youtube.com/watch?v=Bge-BlIAF-0&list=PL7NPEEqrC5-aHJE9xzUAGMslubG_Nzbis&pp=gAQBiAQB",
+		title: "Azure Fundamentals Study Group Sessions",
 	},
 	{
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-		title: "Markdown",
+		desc: "A well detailed explanation of the application process of becoming an MLSA including tips and tricks to ace your application.",
+		href: "https://youtu.be/UNOuYTaSrvQ?si=llOeV0HQCWflbecW",
+		title: "How To Apply To Become a Microsoft Learn Student Ambassador",
 	},
 	{
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-		title: "MDX",
-	},
-	{
-		desc: "Generating png Open Graph images for blog posts.",
-		href: "https://github.com/vercel/satori",
-		title: "Satori",
-	},
-	{
-		desc: "A fully static search library.",
-		href: "https://pagefind.app/",
-		title: "Pagefind",
-	},
-	{
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
-		title: "Astro Icon",
-	},
-	{
-		desc: "Highly customisable source code & syntax highlighter",
-		href: "https://expressive-code.com/",
-		title: "Expressive Code",
+		desc: "A dive into cloud services using Microsoft Azure from storage to security (favorable to beginners).",
+		href: "https://youtu.be/K8KtWjWS11A?si=STSB-zmZpd74f9r3",
+		title: "Azure Fundamentals (AZ-900): Storage Services, Identity, Access and Security",
 	},
 ];
 ---
@@ -74,10 +54,10 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 		</ul>
 	</section>
 	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
+		<h2 class="title mb-4 text-xl">Check out my YouTube posts for more!</h2>
 		<dl class="space-y-4">
 			{
-				cactusTech.map(({ desc, href, title }) => (
+				youtubePosts.map(({ desc, href, title }) => (
 					<div class="flex flex-col gap-2 md:flex-row">
 						<dt>
 							<span class="flex">
