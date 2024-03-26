@@ -5,7 +5,9 @@ publishDate: "20 Feb 2024"
 tags: ["operating systems", "windows", "storage"]
 ---
 ## The Process
-I have always wanted to use a Linux Operating System by itself rather than just using a Virtual machine hesitated since my PC was slow and I could only upgrade it to 6GB RAM at the time. Pushing away all the discouraging factors, I decided to dual boot my PC anyway but with BlackArch which is an Arch-based distro which was a brave move considering I had never interacted with it before and you have to manually setup everything. I just wanted a brief moment of being able to say “I use Arch btw”.
+I have always wanted to use a Linux Operating System by itself rather than just using a Virtual machine but I hesitated since my PC at the time was slow and I could only upgrade it to 6GB RAM at the time. 
+
+Pushing away all the discouraging factors, I decided to dual boot my PC anyway but with BlackArch, which is an Arch-based distro and it was a brave move considering I had never interacted with it before and you have to manually setup everything. I just wanted a brief moment of being able to say “I use Arch btw”.
 
 In the process I went through a lot of errors and learnt a lot through them which made me glad that I had taken the risk regardless of the experience I had at the time and I’m glad to share what I learnt.
 
@@ -16,11 +18,12 @@ This was so unexpected and I tried to look for answers but most were centered on
 Crucial data like passwords can be retrieved by malicious people once they access your shadow files. Deleting shadow files doesn't cause loss of data in your machine and with this I deleted all shadow files in my Windows and the change was astronomical, from 828MBs to about 80GB free shrink space to partition!
 
 ## Tip💡
-To delete shadow files on your Windows machine, go to the command prompt as an administrator and enter the following command👇🏽
+To delete shadow files on your Windows machine, go to the command prompt as an administrator and enter the following command.
+
+`vssadmin delete shadows /for=c: /all`
 
 This will delete all your shadow files and give you more space in your drive.
 
-vssadmin delete shadows /for=c: /all
 More commands on deleting shadow files on Windows are [here](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/vssadmin-delete-shadows).
 
 ## Take-Away
