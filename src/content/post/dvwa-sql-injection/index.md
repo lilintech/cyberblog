@@ -1,6 +1,6 @@
 ---
 title: "SQL Injection Vulnerability Assessment with DVWA"
-description: "Exploring SQL Injections using Damn Vulnerable Web Application (DVWA), free open source software"
+description: "Exploring SQL Injections using Damn Vulnerable Web Application (DVWA), a free open source software"
 publishDate: "27 Feb 2024"
 tags: ["dvwa", "sql injection"]
 ---
