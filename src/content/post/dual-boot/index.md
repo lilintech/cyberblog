@@ -5,17 +5,17 @@ publishDate: "20 Feb 2024"
 tags: ["operating systems", "windows", "storage"]
 ---
 ## The Process
-I have always wanted to use a Linux Operating System by itself rather than just using a Virtual machine but I hesitated since my PC at the time was slow and I could only upgrade it to 6GB RAM at the time. 
+I have always wanted to use a Linux Operating System by itself rather than just using a Virtual machine but I hesitated since my PC at the time was slow and I could only upgrade it to 6GB RAM. 
 
 Pushing away all the discouraging factors, I decided to dual boot my PC anyway but with BlackArch, which is an Arch-based distro and it was a brave move considering I had never interacted with it before and you have to manually setup everything. I just wanted a brief moment of being able to say “I use Arch btw”.
 
-In the process I went through a lot of errors and learnt a lot through them which made me glad that I had taken the risk regardless of the experience I had at the time and I’m glad to share what I learnt.
+In the process I went through a lot of errors and learnt so much through them which made me glad that I had taken the risk regardless of the little experience I had.
 
-My C: Drive on Windows to me was of good storage to partition as half of it was free but when I proceeded to partition, the available shrink space was only 828 MBs😆
+My C: Drive on Windows to me was of good storage to partition as half of it was free but when I proceeded to partition, the available shrink space was only 828 MBs and BlackArch would require a minimum of 20 GB as available storage when partitioning😆
 
-This was so unexpected and I tried to look for answers but most were centered on clearing files. That was until I discovered shadow files which are copies of configuration files that are used for backup or to track changes. This was okay but shadow files occupy a lot of space and data can be breached easily as most are unencrypted.
+This was so unexpected and I tried to look for answers but most were centered on clearing files. That was until I discovered shadow files which are copies of configuration files that are used for backup or to track changes. This was great but shadow files occupy a lot of space and data can be breached easily as most are unencrypted.
 
-Crucial data like passwords can be retrieved by malicious people once they access your shadow files. Deleting shadow files doesn't cause loss of data in your machine and with this I deleted all shadow files in my Windows and the change was astronomical, from 828MBs to about 80GB free shrink space to partition!
+Crucial data like passwords stored in your Windows machine can be retrieved by malicious people once they access your shadow files. Deleting shadow files doesn't cause loss of data in your machine and with this I deleted all shadow files in my Windows and the change was astronomical, from 828MBs to about 80GB free shrink space to partition!
 
 ## Tip💡
 To delete shadow files on your Windows machine, go to the command prompt as an administrator and enter the following command.
