@@ -16,7 +16,7 @@ Let's get straight into this! First we need to setup our environment to get into
 
 [Setup your Kali Linux machine for DVWA using Docker](https://medium.com/@Muriithi_nancy/how-to-setup-dvwa-on-docker-a3819ec25f78)
 
-If you have a different OS, no worries! DVWA can also be used with other OSs like [Windows](https://youtu.be/Yzksa_WjnY0), Ubuntu and you can find tutorial to set it up on YouTube or your preferred browser.
+If you have a different OS, no worries! DVWA can also be used with other OSs like [Windows](https://youtu.be/Yzksa_WjnY0), Ubuntu and you can find tutorials to set it up on YouTube or your preferred browser.
 
 ### Steps to Reproduce the Vulnerability
 We're now in! Hopefully you've followed through the installation tutorial and used the default login credentials (username: admin and password: 
@@ -31,7 +31,7 @@ information.
 3. Inspect the codes of the website by right clicking and 
 selecting the Inspect option or you can use keyboard shortcuts i.e. Ctrl + Shift + Q or F12. 
 ![Inspecting the website](./sql3.PNG)
-5. On inspecting, we see a form tag in which the user IDs are listed, it contains a POST method meaning POST the data entered by the user in the form fields is sent in the body of the HTTP request to the server.
+5. On inspecting, we see a form tag in which the user IDs are listed, it contains a POST method meaning the data entered by the user in the form fields is sent in the body of the HTTP request to the server.
 ![Code analysis](./sql4.PNG)
  8. With this knowledge, we can try the common SQL 
 Injection commands and see if the response will be 
