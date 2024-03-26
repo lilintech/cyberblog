@@ -1,12 +1,14 @@
 ---
 import type { CollectionEntry } from "astro:content";
-
+import FeelbackPulse from "astro-feelback/components/FeelbackPulse.astro";
+import FeelbackMessage from "astro-feelback/components/FeelbackMessage.astro";
+import "astro-feelback/styles/feelback.css";
 import BlogHero from "@/components/blog/Hero.astro";
 import TOC from "@/components/blog/TOC.astro";
 import WebMentions from "@/components/blog/webmentions/index.astro";
 
 import BaseLayout from "./Base.astro";
-
+const CONTENT_SET_LIKES = "33990d70-b18c-425b-95fb-ce4461c6684c";
 interface Props {
 	post: CollectionEntry<"post">;
 }
@@ -34,6 +36,21 @@ const { headings } = await post.render();
 			</div>
 		</article>
 	</div>
+
+	<FeelbackPulse contentSetId={CONTENT_SET_LIKES}
+	preset="heart" 
+	showCount/>
+
+	<div class="rightbar">
+		<FeelbackMessage contentSetId="9f59805a-20e6-40e5-97e7-e2551fe3df44"
+			layout="button-switch"
+			preset="feeling"
+			label="Send feedback"
+			title="What's on your mind?"
+			textAnswer="Thanks for your feedback"
+		/>
+	</div>
+
 	<button
 		aria-label="Back to Top"
 		class="z-90 fixed bottom-8 end-4 flex h-10 w-10 translate-y-28 items-center justify-center rounded-full border-2 border-transparent bg-zinc-200 text-3xl opacity-0 transition-all duration-300 hover:border-zinc-400 data-[show=true]:translate-y-0 data-[show=true]:opacity-100 dark:bg-zinc-700 sm:end-8 sm:h-12 sm:w-12"

@@ -29,3 +29,4 @@ More commands on deleting shadow files on Windows are [here](https://learn.micro
 I really enjoyed the learning process through the issues I faced with my storage. The learning process does not end there as through installing BlackArch Linux, I embarked on a great learning journey, I've encountered a lot of errors during configuration especially with updating packages using pacman but through them I got to appreciate the impact of open source communities that have great material and their openness to share errors they've once encountered and how they solved them.
 
 > You never miss someone who has experienced the same issue as you on the Internet, always do your research before giving up. If you don’t find someone who has asked on the issue you’re facing, you can take the step to ask about it and who knows? You might get a response and be the online savior of someone who also faces the same problem in the future!✨
+---
