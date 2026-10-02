@@ -24,6 +24,20 @@ export const siteConfig: SiteConfig = {
 	webmentions: {
 		link: "https://webmention.io/geekscripts.vercel.app/webmention",
 	},
+	// Comments + reactions are powered by giscus (https://giscus.app), backed by
+	// GitHub Discussions on your public repo. To activate:
+	//   1. Enable the "Discussions" feature on the repo: Settings -> General -> Features.
+	//   2. Install the giscus GitHub app and grant it the repo: https://github.com/apps/giscus
+	//   3. Go to https://giscus.app, enter your repo, pick a Discussion category
+	//      (a category of type "Announcement" is recommended), then copy the generated
+	//      repo-id and category-id into the fields below.
+	// Leave `repoId`/`categoryId` empty ("") to keep the widget hidden. None of these are secrets.
+	giscus: {
+		repo: "lilintech/cyberblog",
+		repoId: "R_kgDOLjORnQ",
+		category: "Announcements",
+		categoryId: "DIC_kwDOLjORnc4DGkCK",
+	},
 };
 
 // Used to generate links in both the Header & Footer.

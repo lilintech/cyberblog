@@ -9,7 +9,7 @@ const year = new Date().getFullYear();
 >
 	<div class="me-0 sm:me-4">
 		&copy; {siteConfig.author}
-		{year}.<span class="inline-block">&nbsp;🚀&nbsp;geekScripts</span>
+		<span id="footer-year">{year}</span>.<span class="inline-block">&nbsp;🚀&nbsp;geekScripts</span>
 	</div>
 	<nav
 		aria-label="More on this site"
@@ -24,3 +24,10 @@ const year = new Date().getFullYear();
 		}
 	</nav>
 </footer>
+
+<script is:inline>
+	// Astro builds statically, so the year above is frozen at build time.
+	// Update it in the browser so the copyright is always the current year.
+	const footerYear = document.getElementById("footer-year");
+	if (footerYear) footerYear.textContent = new Date().getFullYear().toString();
+</script>
