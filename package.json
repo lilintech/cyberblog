@@ -2,6 +2,9 @@
 	"name": "astro-cactus",
 	"version": "4.3.0",
 	"private": false,
+	"engines": {
+		"node": "24.x"
+	},
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
@@ -18,7 +21,6 @@
 		"@astrojs/tailwind": "5.1.0",
 		"astro": "4.5.5",
 		"astro-expressive-code": "^0.33.5",
-		"astro-feelback": "^0.3.4",
 		"astro-icon": "^1.1.0",
 		"rehype-external-links": "^3.0.0",
 		"satori": "0.10.13",

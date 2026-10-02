@@ -12,6 +12,14 @@ export type SiteConfig = {
 		link: string;
 		pingback?: string;
 	};
+	// Comments + reactions powered by giscus (https://giscus.app), backed by
+	// GitHub Discussions. Leave `repo` empty to hide the widget.
+	giscus?: {
+		repo: string;
+		repoId?: string;
+		category?: string;
+		categoryId?: string;
+	};
 };
 
 export type PaginationLink = {
